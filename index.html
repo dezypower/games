@@ -1,0 +1,724 @@
+<html> 
+<head>
+<title>xstore</title>
+    <meta charset="UTF" width=device-width initial-scale=1.0>
+	<link href="css.css"  type="text/css" rel="stylesheet"/>
+    <script src="anime/src/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin-left: -2px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(img/gamingbackground.jpg);
+}
+
+#j1 {
+    float: left;
+    margin-top: -25px;
+    width: 100.6%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#j1 h1 {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+#j1 p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.image-holder img {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+}
+
+.q1 {
+    margin-top: 0;
+    width: 100%;
+}
+
+.q2 ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+.q2 {
+    width: 35%;
+    float: left;
+    margin: 6%; 
+    padding: 1%;
+    background-color: white;
+    border-radius:1%;
+}
+
+.q2 p {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.mid-content {
+    width: 100.6%;
+    height: 20%;
+    float: left;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 22px;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.z1 {
+    width: 100.6%;
+    background-image: url(img/6006.jpg);
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover; 
+    float: left;  
+}
+
+.z1 h1 {
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    margin-top: 15%;
+    padding: 8%;
+    font-size: 60px;
+    border-radius: 2%;
+}
+
+
+
+#a1 {
+    margin-left: 92%;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a h1{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    width: 70%;
+    margin-left: 70px;
+}
+
+a h1:hover {
+    border-right: 2px solid;
+    border-right-color: black;
+    border-right-width: thick;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin-top: -5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 102%;
+    position: fixed;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.nav li {
+    float: left;
+    margin-left: 90px;
+}
+
+.nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+    border-bottom: 2px solid;
+    border-bottom-color: darkgray;
+    background-color:white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+/* section 3 */
+
+.middle {
+    border-bottom: 2px solid;
+    border-bottom-width: thin;
+    border-bottom-style: groove;
+    padding: 8px;
+    margin-left: 70px;
+    width: 80%;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    float: left;
+}
+
+.middle h2{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* fooster section */
+
+.footer {
+    float: right;
+    padding: 30px;
+    margin-right: -8px;
+    width: 96.9%;
+    height: 39%;
+    margin-bottom: -12px;
+    background-color: rgb(230,230,230);
+    color: black;
+}
+
+.footer p{
+    margin: -1px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.footer img {
+    width: auto;
+    height: auto;
+    box-shadow: none;
+}
+
+.footer h2 {
+    color: firebrick;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 26px;
+    font-size: 22px;
+}
+
+tr td {background-color: white}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table img {
+    float: left;
+    margin-left: 10%;
+}
+
+a
+{
+  text-decoration: none;
+  color: darkgray;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: white;
+}
+
+#menuToggle
+{
+  margin-top: 5px;    
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 100px;
+  height: 700;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: rgba(0,0,0,0.3);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+</style>
+    </head>
+    <body>
+    <!--the body starts here-->  
+        
+
+	<div> <right><input type="text" name="search" placeholder="Search.."> </right></div>
+    
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="xbox.html">Xbox</a>
+  <a href="nintendo.html">Nintendo</a>
+  <a href="playstation.html">Playstation</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+
+
+
+    <div class="q1">
+        <div id="j1">
+	    <center><h1>xSTORE</h1></center>
+            <h1>READY PLAYER ONE</h1>
+            <p>Welcome to the first Zambain simulation of a life time <br> Buy, Rent and Play Games</p>
+        </div>
+
+        <div class="q2">
+            <div class="image-holder">
+            <img src="img/apps.9796.14425140369408817.c3bb3d09-9a19-40f2-ae6d-a314e306a9a3.f204e82a-c855-456b-bd4b-c0c07b530fe0.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Popular by demand</p>
+            <ul>
+            <li> Injustuce Gods Among Us. </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> XBOX PLAYSTATION NINTENDO STADIA </li>    
+            </ul>        
+            <a class="l1" href="buy.html">Buy</a>
+            <a class="l1" href="buy.html">Rent</a>
+            </div>
+        </div>
+        <div class="q2">
+            <div class="image-holder">
+                <img src="img/apps.26834.13510798887356280.89ca2b15-2e64-4fec-93cd-867d81550d1c.8db54b7e-1c78-4446-a5f9-7b6796f4e811.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Amazing and hard</p>
+            <ul>
+            <li> FORZA Horizon 4 </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> The best so far </li>
+            <li> XBOX PC </li>    
+            </ul>        
+            
+            </div>
+        </div>
+        <div class="q2">
+            <div class="image-holder">
+            <img src="img/4.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Everyone should play this game</p>
+            <ul>
+            <li> Mortal Kombat XL </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> The best so far </li>
+            <li> XBOX PLAYSTATION NINTENDO </li>    
+            </ul>        
+            </div>
+        </div>
+
+        <div class="q2">
+            <div class="image-holder">
+                <img src="img/apps.26834.13510798887356280.89ca2b15-2e64-4fec-93cd-867d81550d1c.8db54b7e-1c78-4446-a5f9-7b6796f4e811.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Amazing and hard</p>
+            <ul>
+            <li> FORZA Horizon 4 </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> The best so far </li>
+            <li> XBOX PC </li>    
+            </ul>        
+            
+            </div>
+        </div>
+
+        <div class="q2">
+            <div class="image-holder">
+                <img src="img/apps.26834.13510798887356280.89ca2b15-2e64-4fec-93cd-867d81550d1c.8db54b7e-1c78-4446-a5f9-7b6796f4e811.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Amazing and hard</p>
+            <ul>
+            <li> FORZA Horizon 4 </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> The best so far </li>
+            <li> XBOX PC </li>    
+            </ul>        
+            
+            </div>
+        </div>
+
+        <div class="q2">
+            <div class="image-holder">
+                <img src="img/apps.26834.13510798887356280.89ca2b15-2e64-4fec-93cd-867d81550d1c.8db54b7e-1c78-4446-a5f9-7b6796f4e811.jpeg">
+            </div>    
+            <div class="info-holder">
+            <p>Amazing and hard</p>
+            <ul>
+            <li> FORZA Horizon 4 </li>
+            <li> Hard to beat </li>
+            <li> voted best AAA title since 2004 </li>
+            <li> The best so far </li>
+            <li> XBOX PC </li>    
+            </ul>        
+            
+            </div>
+        </div>
+
+        <div class="mid-content">
+            <h2>The Best Games By the Best Creators<br> Dive in and Explore New Worlds </h2>
+            <p>Never stop wanting more. <i>Game Informer.</i></p>
+        </div>
+    </div>
+
+    <div class="z1">
+        <h1>Browse</h1>
+        <table>
+                <tr>
+                  <th>Game Title</th>
+                  <th>Genre</th>
+                  <th>Price</th>
+                </tr>
+                <tr> 
+                  <td class="td1"><img src="img/11.jpeg"></td>
+                  <td>SHOOTER <br> Guns <br> Adult Content(Blood, Gore) <br> Cross Platform</td>
+                  <td>k100 / k69.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr>
+		  
+		   
+                <tr>
+                  <td class="td1"><img src="img/12.jpeg"></td>
+                  <td>Simulation <br> Racing <br> Cars <br> Xbox Original</td>
+                  <td>k150 / k49.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr>
+                <tr>
+                  <td class="td1"><img src="img/6.jpeg"></td>
+                  <td>FIGHTING<br> ACTION <br> Sequence </td>
+                  <td>k300 / k49.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr>
+                <tr>
+                  <td class="td1"><img src="img/5.jpeg"></td>
+                  <td>Simulation <br> Football <br> Triple A Title <br> Soccer</td>
+                  <td>k150 / k54.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+              </tr>
+              </table>
+    </div>
+	<div class="z1">
+		<table>	<tr>
+				<td class="td1"><img src="img/533265-nintendo-switch.jpg" width="50%"></td>
+                  		<td>NINTENDO SWITCH<br></td>
+                 		 <td>k1000</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table>
+		<table>	<tr>
+				<td class="td1"><img src="img/8218c005-5fcc-499b-8cff-39e8b8e18b5c.jpg" width="50%"></td>
+                  		<td>GAMING PC<br></td>
+                 		 <td>k13000</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table>
+		<table>	<tr>
+				<td class="td1"><img src="img/c9d18357-e3ea-49b7-99d3-3989bbb25b80.jpg" width="50%"></td>
+                  		<td>XBOX ONE CONSOLE<br></td>
+                 		 <td>k5000</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table>
+		<table>	<tr>
+				<td class="td1"><img src="img/0910_34(2).PNG" width="50%"></td>
+                  		<td>GAMING KEYBOARD<br></td>
+                 		 <td>k700</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table>
+		<table>	<tr>
+				<td class="td1"><img src="img/2018-05-17-product-13.jpg" width="50%"></td>
+                  		<td>GAMING PACK<br></td>
+                 		 <td>k24000</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table><table>	<tr>
+				<td class="td1"><img src="img/asus_strix_7_1_7_1_usb_gaming_headset_1142086.jpg" width="50%"></td>
+                  		<td>GAMING HEADSETS<br></td>
+                 		 <td>k650</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table><table>	<tr>
+				<td class="td1"><img src="img/msi-vr-one-backpack-pc.png" width="50%"></td>
+                  		<td>GAMING BAG PACK<br></td>
+                 		 <td>k5000</td>
+		   		<button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+			</tr>
+		</table>
+	</div>
+      <video width="70" controls>
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">X</span>
+  	<source src="vid/WILD CAT TVC.mp4" type="video/mp4">
+ 	 Your browser does not support HTML5 video.
+	</video>
+
+	<p><a href="https://www.tradekings.co.zm/">Trade Kings Ad!</a>.</p>
+        <div>
+		Contact us on: <br/>phone: +260974434942 <br/> email:xstore@gmail.com <br/> 
+	</div>
+	<div>
+<form action="/action_page.php" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input type="submit">
+</form>
+<br>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+
+<p>Leave a comment int the above text area!</p>
+</div>
+    </body>
+</html>

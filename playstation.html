@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin-left: -2px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(img/PlayStation-Logo-796x416.jpg);
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.z1 h1 {
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    margin-top: 15%;
+    padding: 8%;
+    font-size: 60px;
+    border-radius: 2%;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #CFB53B;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: gold;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="xbox.html">Xbox</a>
+  <a href="nintendo.html">Nintendo</a>
+  <a href="playstation.html">Playstation</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   <div class="z1">
+        <h1>Browse</h1>
+        <table>
+                <tr>
+                  <th>Game Title</th>
+                  <th>Genre</th>
+                  <th>Price</th>
+                </tr>
+		<tr>
+                  <td class="td1"><img src="img/4089_d20180531-001_Angled_FOB_Packshots_PS4_EN_C_FINAL.png" width="56%"></td>
+                  <td>ADVENTURE<br> ACTION <br> Adult Content(Blood, Gore) <br> Sequence </td>
+                  <td>k300 / k49.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td><br/>
+		   <tr> 
+                  <td class="td1"><img src="img/300402-assassin-s-creed-unity-limited-edition-playstation-4-front-cover.jpg" width="56%"></td>
+                  <td>ADVENTURE <br> WEAPONS <br> Adult Content(Blood, Gore) <br> Cross Platform</td>
+                  <td>k100 / k69.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr><br/>
+                 <tr> 
+                  <td class="td1"><img src="img/f45375df-e579-4819-9d74-8cfb7a03e442_1.d26199accd3354c8ba9ae62fa01c924c.jpeg"height="60%" width="56%"></td>
+                  <td>ADVENTURE <br> WEAPONS <br> Adult Content(Blood, Gore) <br> Cross Platform</td>
+                  <td>k100 / k69.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr><br/>
+		<tr> 
+                  <td class="td1"><img src="img/playerunknowns-battlegrounds-pack-art-01-ps4-09nov18__87984.1544120727.jpg"height="60%" width="56%"></td>
+                  <td>ADVENTURE <br> WEAPONS <br> Adult Content(Blood, Gore) <br> Cross Platform</td>
+                  <td>k400 / k69.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr><br/>
+		<tr> 
+                  <td class="td1"><img src="img/images (4).jfif"height="200%" width="56%"></td>
+                  <td>SPORTS <br> BASKETBALL <br> ALL <br> Cross Platform</td>
+                  <td>k300 / k69.99</td>
+		  <td>
+		   <button class="button"><a href="checkout.html" style="color:red"> BUY NOW</button>
+		  </td>
+                </tr><br/>
+	 </table>
+    </div>
+	<div class="callout">
+  <div class="callout-header">Ads</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">X</span>
+  <div class="callout-container">
+    <p>Bitcoin minning made easy. <a href="http://fidelitycryptomining.com">Visit us</a> or close it if it is in your way.</p>
+  </div>
+</div>
+
+</body>
+</html> 
